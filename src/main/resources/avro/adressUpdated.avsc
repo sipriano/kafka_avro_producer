@@ -1,0 +1,161 @@
+{
+    "type": "record",
+    "name": "address_updated",
+    "namespace": "br.com.kroton",
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "addressType",
+        "type": "string"
+      },
+      {
+        "name": "defaultAddress",
+        "type": [
+          "null",
+          "boolean"
+        ],
+        "default": null
+      },
+      {
+        "name": "latestEndDate",
+        "type": [
+          "null",
+          {
+            "type": "long",
+            "connect.version": 1,
+            "connect.name": "org.apache.kafka.connect.data.Timestamp",
+            "logicalType": "timestamp-millis"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "latestStartDate",
+        "type": [
+          "null",
+          {
+            "type": "long",
+            "connect.version": 1,
+            "connect.name": "org.apache.kafka.connect.data.Timestamp",
+            "logicalType": "timestamp-millis"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "mailingCity",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "mailingCountry",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "mailingPostalCode",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "mailingState",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "mailingStreet",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "mailingStreet2",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "seasonAlendDay",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "seasonAlendMonth",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "seasonAlendYear",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "seasonalStartDay",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "seasonalStartMonth",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "seasonalStartYear",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "updatedAt",
+        "type": [
+          {
+            "type": "long",
+            "connect.version": 1,
+            "connect.name": "org.apache.kafka.connect.data.Timestamp",
+            "logicalType": "timestamp-millis"
+          }
+        ]
+      },
+      {
+        "name": "userUpdated",
+        "type": "string"
+      }
+    ],
+    "connect.name": "br.com.kroton.address_updated"
+  }

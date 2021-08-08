@@ -1,0 +1,252 @@
+{
+    "type": "record",
+    "name": "contact_created",
+    "namespace": "br.com.kroton",
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "recordType",
+        "type": "string"
+      },
+      {
+        "name": "fullName",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "firstName",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "lastName",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "birthDate",
+        "type": [
+          "null",
+          {
+            "type": "long",
+            "connect.version": 1,
+            "connect.name": "org.apache.kafka.connect.data.Timestamp",
+            "logicalType": "timestamp-millis"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "documentNumber",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "doNotCall",
+        "type": [
+          "null",
+          "boolean"
+        ],
+        "default": null
+      },
+      {
+        "name": "mobilePhone",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "homePhone",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "phone",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "maritalStatus",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "hasOptedOutOfEmail",
+        "type": [
+          "null",
+          "boolean"
+        ],
+        "default": null
+      },
+      {
+        "name": "alternateEmail",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "chosenFullName",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "citizenship",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "countryOfOrigin",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "deceased",
+        "type": [
+          "null",
+          "boolean"
+        ],
+        "default": null
+      },
+      {
+        "name": "doNotContact",
+        "type": [
+          "null",
+          "boolean"
+        ],
+        "default": null
+      },
+      {
+        "name": "dualCitizenship",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "ethnicity",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "financialAidApplicant",
+        "type": [
+          "null",
+          "boolean"
+        ],
+        "default": null
+      },
+      {
+        "name": "gender",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "preferredPhone",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "preferredEmail",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "race",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "religion",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "workEmail",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "workPhone",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "createdAt",
+        "type": [
+          {
+            "type": "long",
+            "connect.version": 1,
+            "connect.name": "org.apache.kafka.connect.data.Timestamp",
+            "logicalType": "timestamp-millis"
+          }
+        ]
+      },
+      {
+        "name": "userCreated",
+        "type": "string"
+      }
+    ],
+    "connect.name": "br.com.kroton.contact_created"
+  }

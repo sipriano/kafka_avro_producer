@@ -1,0 +1,89 @@
+{
+    "type": "record",
+    "name": "application_updated",
+    "namespace": "br.com.kroton",
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "applicantDecisionDate",
+        "type": [
+          "null",
+          {
+            "type": "long",
+            "connect.version": 1,
+            "connect.name": "org.apache.kafka.connect.data.Timestamp",
+            "logicalType": "timestamp-millis"
+          }
+        ],
+        "default":"null"
+      },
+      {
+        "name": "date",
+        "type": [
+          "null",
+          {
+            "type": "long",
+            "connect.version": 1,
+            "connect.name": "org.apache.kafka.connect.data.Timestamp",
+            "logicalType": "timestamp-millis"
+          }
+        ],
+        "default":"null"
+      },
+      {
+        "name": "status",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "type",
+        "type": "string"
+      },
+      {
+        "name": "applicant",
+        "type": "string"
+      },
+      {
+        "name": "applyingTo",
+        "type": "string"
+      },
+      {
+        "name": "preparer",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "term",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "updatedAt",
+        "type": [
+          {
+            "type": "long",
+            "connect.version": 1,
+            "connect.name": "org.apache.kafka.connect.data.Timestamp",
+            "logicalType": "timestamp-millis"
+          }
+        ]
+      },
+      {
+        "name": "userUpdated",                
+        "type": "string"
+      }
+    ],
+    "connect.name": "br.com.kroton.application_updated"
+  }

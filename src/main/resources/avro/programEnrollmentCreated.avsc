@@ -1,0 +1,151 @@
+{
+  "type": "record",
+  "name": "program_enrollment_created",
+  "namespace": "br.com.kroton",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "admissionDate",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "connect.version": 1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "applicationSubmittedDate",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "connect.version": 1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "classStanding",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null 
+    },
+    {
+      "name": "creditsAttempted",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default": null 
+    },
+    {
+      "name": "creditsEarned",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default": null 
+    },
+    {
+      "name": "eligibleToEnroll",
+      "type": [
+        "null",
+        "boolean"
+      ],
+      "default": null 
+    },
+    {
+      "name": "startDate",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "connect.version": 1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "endDate",
+      "type": [
+        "null",
+        {
+          "type": "long",
+          "connect.version": 1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",
+          "logicalType": "timestamp-millis"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "status",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null 
+    },
+    {
+      "name": "gradePointAverage",
+      "type": [
+        "null",
+        "float"
+      ],
+      "default": null 
+    },
+    {
+      "name": "program",
+      "type": "string"
+    },
+    {
+      "name": "affiliation",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null 
+    },
+    {
+      "name": "contact",
+      "type": "string"
+    },
+    {
+      "name": "programPlan",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null 
+    },
+    {
+      "name": "createdAt",
+      "type": [
+        {
+          "type": "long",
+          "connect.version": 1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",
+          "logicalType": "timestamp-millis"
+        }
+      ]
+    },
+    {
+      "name": "userCreated",
+      "type": "string"
+    }
+  ],
+  "connect.name": "br.com.kroton.program_enrollment_created"
+}

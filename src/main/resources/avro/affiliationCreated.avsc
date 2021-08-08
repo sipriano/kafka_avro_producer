@@ -1,0 +1,89 @@
+{
+    "type": "record",
+    "name": "affiliation_created",
+    "namespace": "br.com.kroton",
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "description",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "role",
+        "type": "string"
+      },
+      {
+        "name": "contact",
+        "type": "string"
+      },
+      {
+        "name": "account",
+        "type": "string"
+      },
+      {
+        "name": "startDate",
+        "type": [
+          "null",
+          {
+            "type": "long",
+            "connect.version": 1,
+            "connect.name": "org.apache.kafka.connect.data.Timestamp",
+            "logicalType": "timestamp-millis"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "endDate",
+        "type": [
+          "null",
+          {
+            "type": "long",
+            "connect.version": 1,
+            "connect.name": "org.apache.kafka.connect.data.Timestamp",
+            "logicalType": "timestamp-millis"
+          }
+        ],
+        "default": null
+      },
+      {
+        "name": "status",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null
+      },
+      {
+        "name": "primary",
+        "type": [
+          "null",
+          "boolean"
+        ],
+        "default": null
+      },
+      {
+        "name": "createdAt",
+        "type": [
+          {
+            "type": "long",
+            "connect.version": 1,
+            "connect.name": "org.apache.kafka.connect.data.Timestamp",
+            "logicalType": "timestamp-millis"
+          }
+        ]
+      },
+      {
+        "name": "userCreated",
+        "type": "string"
+      }
+    ],
+    "connect.name": "br.com.kroton.affiliation_created"
+  }

@@ -1,0 +1,99 @@
+{
+  "type": "record",
+  "name": "test_created",
+  "namespace": "br.com.cogna",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "dateReceived",
+      "type": [ "null",
+        {
+          "connect.name": "org.apache.kafka.connect.data.Date",
+          "connect.version": 1,
+          "logicalType": "date",
+          "type": "int"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "source",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "testDate",
+      "type": [ "null",
+        {
+          "connect.name": "org.apache.kafka.connect.data.Date",
+          "connect.version": 1,
+          "logicalType": "date",
+          "type": "int"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "type",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "contact",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "code",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },    
+    {
+      "name": "year",
+      "type": [
+        "null",
+        "int"
+      ],
+      "default": null
+    }, 
+    {
+      "name": "recordActive",
+      "type": "boolean"
+    },       
+    {
+      "name": "createdAt",
+      "type": [
+        {
+          "type": "long",
+          "connect.version": 1,
+          "connect.name": "org.apache.kafka.connect.data.Timestamp",
+          "logicalType": "timestamp-millis"
+        }
+      ]
+    },
+    {
+      "name": "userCreated",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ],
+  "connect.name": "br.com.cogna.test_created"
+}

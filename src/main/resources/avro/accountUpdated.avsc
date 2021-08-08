@@ -1,0 +1,55 @@
+{
+    "type": "record",
+    "name": "account_updated",
+    "namespace": "br.com.kroton",
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "recordType",
+        "type": "string"
+      },
+      {
+        "name": "recordGroup",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null 
+      },
+      {
+        "name": "name",
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null 
+      },
+      {
+        "name": "code", 
+        "type": [
+          "null",
+          "string"
+        ],
+        "default": null 
+      },
+      {
+        "name": "updatedAt",
+        "type": [
+          {
+            "type": "long",
+            "connect.version": 1,
+            "connect.name": "org.apache.kafka.connect.data.Timestamp",
+            "logicalType": "timestamp-millis"
+          }
+        ]
+      },
+      {
+        "name": "userUpdated",
+        "type": "string"
+      }
+    ],
+    "connect.name": "br.com.kroton.account_updated"
+  }
